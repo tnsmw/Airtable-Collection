@@ -1,0 +1,84 @@
+:root {
+   --circle-diameter: 50px;
+}
+
+html {
+   background-color: #FFFF00;
+   font-size: 62.5%;
+   height: 100%;
+}
+
+body {
+   align-items: center;
+   animation: gradient 50s ease infinite;
+  background: linear-gradient(-45deg, #9400D3, #4B0082, #0000FF, #a0a7a0, #FFFF00, #FF7F00, #FF0000);
+  background-size: 1000% 1000%;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   font-family: Karla, -apple-system, sans-serif;
+   font-size: 16px;
+   min-height: 100%;
+   padding: 0 3rem;
+   text-align: center;
+}
+
+body.not-animated {
+   animation: unset;
+   background-size: 100% 100%;
+}
+
+.no-js .js {
+   display: none;
+}
+
+p {
+   font-size: 2rem;
+}
+
+.hidden {
+   display: none;
+}
+
+button {
+   z-index: 1;
+}
+
+#cursor {
+   animation: pulse 2s ease infinite alternate;
+   background-color: #fff;
+   border-radius: 50%;
+   height: var(--circle-diameter);
+   left: -var(--circle-diameter);
+   mix-blend-mode: difference;
+   position: absolute;
+   top: -var(--circle-diameter);
+   transition: all 0.2s ease;
+   width: var(--circle-diameter);
+   z-index: 0;
+}
+
+@keyframes pulse {
+   from {
+      height: var(--circle-diameter);
+      width: var(--circle-diameter);
+   }
+   to {
+      height: calc(var(--circle-diameter) * 3);
+      width: calc(var(--circle-diameter) * 3);
+   }
+}
+
+
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
