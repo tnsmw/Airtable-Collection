@@ -21,7 +21,6 @@ const newAnswers = () => {
    if (answers) {
       answers.classList.remove('hidden');
    }
-
 }
 
 button.addEventListener('click', (e) => {

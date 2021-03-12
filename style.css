@@ -28,11 +28,24 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .hidden {
@@ -42,12 +55,15 @@ h2 {
 button {
   background-color: #fff;
   border: none;
-  padding: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 10rem;
+  width: 10rem;
   z-index: 1;
 }
 
 #cursor {
-  animation: pulse 1s ease infinite alternate;
+  animation: pulse 2s ease infinite alternate;
   background-color: #fff;
   border-radius: 50%;
   height: var(--circle-diameter);
@@ -65,8 +81,8 @@ button {
     width: var(--circle-diameter);
   }
   to {
-    height: calc(var(--circle-diameter) * 2);
-    width: calc(var(--circle-diameter) * 2);
+    height: calc(var(--circle-diameter) * 3);
+    width: calc(var(--circle-diameter) * 3);
   }
 }
 
