@@ -6,16 +6,16 @@ const answers = document.querySelector('#answers');
 
 const newAnswers = () => {
    const nameEl = document.querySelector('#name');
-   const animalEl = document.querySelector('#animal');
+   const genreEl = document.querySelector('#genre');
    const personsName = prompt('What\'s your name?');
-   const favoriteAnimal = prompt('What\'s your favorite animal?');
+   const favoriteGenre = prompt('What\'s your favorite TV genre?');
    
    if (personsName && nameEl) {
       nameEl.innerHTML = personsName;
    }
    
-   if (favoriteAnimal && animalEl) {
-      animalEl.innerHTML = favoriteAnimal;
+   if (favoriteGenre && genreEl) {
+      genreEl.innerHTML = favoriteGenre;
    }
 
    if (answers) {
