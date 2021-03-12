@@ -25,7 +25,7 @@ const newAnswers = () => {
 }
 
 button.addEventListener('click', (e) => {
-   document.querySelector('body').classList.add('not-animated');
+   document.querySelector('body');
    newAnswers();
 });
 
